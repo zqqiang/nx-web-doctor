@@ -1,0 +1,17 @@
+{
+  "name": "nx-web-doctor",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "https://github.com/zqqiang/nx-web-doctor.git",
+  "author": "zqqiang <qiangzhaoqing@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "marko-starter": "^2.0.4"
+  },
+  "scripts": {
+    "start": "marko-starter server",
+    "build": "marko-starter build",
+    "serve-static": "marko-starter serve-static"
+  },
+  "static-repo": "git@github.com:zqqiang/nx-web-doctor.git#gh-pages"
+}
