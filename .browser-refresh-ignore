@@ -1,0 +1,6 @@
+node_modules/
+dist/
+*.marko.js
+*.map
+*.md
+.git/
