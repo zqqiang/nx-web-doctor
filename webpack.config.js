@@ -8,7 +8,7 @@ module.exports = {
   mode: process.env.NODE_ENV || "development",
   devtool: "#cheap-source-map",
   // entry: path.resolve(__dirname, "client.js"),
-  entry: "./client.js",
+  entry: ["./client.js"],
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js"
@@ -34,7 +34,7 @@ module.exports = {
         ]
       },
       {
-        test: /\.(jpg|jpeg|gif|png)$/,
+        test: /\.(jpg|jpeg|gif|png|svg)$/,
         loader: "file-loader",
         query: {
           name: "img/[name].[ext]",
