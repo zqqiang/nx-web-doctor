@@ -40,6 +40,18 @@ module.exports = {
           name: "img/[name].[ext]",
           publicPath: "/"
         }
+      },
+      // Font-awesome 4.7.X
+      {
+        test: /\.(ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
+        exclude: [/vendors/, /img/],
+        loader: "file-loader?name=fonts/[name].[ext]"
+      },
+      // MDB
+      {
+        test: /\.(ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
+        exclude: [/node_modules/, /img/],
+        loader: "file-loader?name=font/roboto/[name].[ext]"
       }
     ]
   },
