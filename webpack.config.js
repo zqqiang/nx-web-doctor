@@ -3,6 +3,7 @@
 const webpack = require("webpack");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const path = require("path");
+const CleanWebpackPlugin = require("clean-webpack-plugin");
 
 module.exports = {
   mode: process.env.NODE_ENV || "development",
@@ -37,8 +38,8 @@ module.exports = {
         test: /\.(jpg|jpeg|gif|png|svg)$/,
         loader: "file-loader",
         query: {
-          name: "img/[name].[ext]",
-          publicPath: "/"
+          name: "[name].[ext]",
+          useRelativePath: true
         }
       },
       // Font-awesome 4.7.X
@@ -64,6 +65,7 @@ module.exports = {
       $: "jquery",
       jQuery: "jquery",
       Popper: ["popper.js", "default"]
-    })
+    }),
+    new CleanWebpackPlugin(["dist"])
   ]
 };
