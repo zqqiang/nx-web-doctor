@@ -8,7 +8,8 @@
     "start": "npm run build && node server.js",
     "dev": "browser-refresh server.js --dev",
     "lint": "eslint src",
-    "test": "npm run lint"
+    "test": "npm run lint",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -45,6 +46,7 @@
     "css-loader": "^1.0.1",
     "eslint-config-prettier": "^3.3.0",
     "eslint-plugin-prettier": "^3.0.0",
+    "gh-pages": "^2.0.1",
     "mini-css-extract-plugin": "^0.4.5",
     "node-sass": "^4.10.0",
     "postcss-loader": "^3.0.0",
