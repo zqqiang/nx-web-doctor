@@ -9,5 +9,4 @@ require("vendors/js/popper.min.js");
 require("vendors/js/bootstrap.min.js");
 require("vendors/js/mdb.min.js");
 
-require("components/site-layout");
 require("marko/components").init();
