@@ -1,0 +1,16 @@
+{
+  "name": "nx-web-doctor",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "deploy": "gh-pages -d public"
+  },
+  "repository": "https://github.com/zqqiang/nx-web-doctor.git",
+  "author": "zqqiang <qiangzhaoqing@gmail.com>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "express": "^4.16.4"
+  }
+}
